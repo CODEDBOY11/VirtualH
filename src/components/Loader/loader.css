@@ -76,5 +76,20 @@
   }
   .logo-part {
     transition: opacity 220ms ease, transform 220ms ease;
+   
+  
+  }
+
+}
+@media (max-width: 768px) {
+  .logo-svg {
+    width: 500px;
+    height: 48px;
+    margin-left: -40px;
+  }
+
+  .logo-part {
+    font-size: 60px;
+
   }
 }
