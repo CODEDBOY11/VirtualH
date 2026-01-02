@@ -1,0 +1,80 @@
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(8px) saturate(120%); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  z-index: 9999;
+  transition: opacity 600ms ease, visibility 600ms ease;
+  opacity: 1;
+}
+
+.loader-overlay--hide {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.loader-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.loader-svg {
+  width: 160px;
+  height: 48px;
+}
+.logo {
+  transform: translateY(-18px) scale(0.96);
+  opacity: 0;
+  animation: logo-slide-in 650ms cubic-bezier(0.16, 0.84, 0.32, 1) forwards;
+}
+
+@keyframes logo-slide-in {
+  from {
+    transform: translateY(-30px) scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.logo-svg {
+  width: 800px;
+  height: 96px;
+}
+
+.logo-part {
+  font-family: "Alice", serif;
+  font-weight: 800 !important; /* Alice is a serif font, usually regular */
+  font-size: 60px;
+  cursor: default;
+  transition: opacity 220ms ease, transform 220ms ease;
+  will-change: opacity, transform;
+  display: flex;
+  align-items: center;
+}
+.logo-part:hover {
+  transform: scale(1.12);
+  transition: transform 220ms ease;
+}
+
+/* small accessibility-friendly reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+  .logo-part {
+    transition: opacity 220ms ease, transform 220ms ease;
+  }
+}
