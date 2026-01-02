@@ -71,3 +71,12 @@
   margin: 50px;
   margin-bottom: 100px !important;
 }
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100%; /* fill horizontal space */
+    height: auto; /* optional, depends on your layout */
+    min-height: 100vh; /* full screen height */
+    background-size: cover;
+    background-position: center;
+  }
+}
