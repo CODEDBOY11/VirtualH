@@ -113,14 +113,14 @@
   .logos {
     width: 6rem !important;
     height: auto !important;
-    margin: 0 5px !important;
+    margin: 0 5px 0 18px !important;
     justify-content: center;
     align-items: center;
   }
   .logoss {
     width: 3.5rem !important;
     height: auto !important;
-    margin: 0 5px !important;
+    margin: 0 5px 0 14px !important;
     justify-content: center;
     align-items: center;
   }
@@ -130,6 +130,10 @@
     font-family: "Alice", serif;
     font-weight: 600;
     margin-bottom: 30px;
+  }
+
+  .trusted-by-section::after {
+    width: 100vw;
   }
 }
 .trusted-by-section {
