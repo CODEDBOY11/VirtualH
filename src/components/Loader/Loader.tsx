@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./loader.css";
 
+type LoaderProps = {
+  onFinish?: () => void;
+};
+
 // Match the animation timing to feel premium and smooth (no abrupt transitions)
 const LETTERS = [
   { char: "V", color: "#FFFFFF" },
@@ -18,7 +22,7 @@ const LETTERS = [
   { char: "N", color: "#0dc9b9" },
 ];
 
-const Loader: React.FC = () => {
+const Loader: React.FC<LoaderProps> = ({ onFinish }) => {
   const [visible, setVisible] = useState(true); // mounted in DOM
   const [hiding, setHiding] = useState(false); // triggers overlay fade-out
   const logoRef = useRef<HTMLDivElement | null>(null);
@@ -73,19 +77,23 @@ const Loader: React.FC = () => {
       setTimeout(() => {
         if (!mounted) return;
         setHiding(true);
-        // wait for CSS transition end then remove from DOM
         const transitionEndHandler = () => {
           if (!mounted) return;
           setVisible(false);
+          onFinish?.(); // ← THIS tells the app loading is done
         };
+
         const overlayEl = overlayRef.current;
         if (overlayEl) {
           overlayEl.addEventListener("transitionend", transitionEndHandler, {
             once: true,
           });
         } else {
-          // fallback
-          setTimeout(() => mounted && setVisible(false), 600);
+          setTimeout(() => {
+            if (!mounted) return;
+            setVisible(false);
+            onFinish?.();
+          }, 600);
         }
       }, totalFadeIn + 200);
     }, slideDuration + 30);

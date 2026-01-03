@@ -40,7 +40,7 @@
   margin-left: 50px;
   max-width: 720px; /* limit line-length */
 }
-.btn-work {
+.btn-work-with-us {
   margin-left: 50px;
   margin-top: 80px;
   color: white;
@@ -86,10 +86,11 @@
     background-position: center;
   }
   .header {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-left: 0;
-    margin-top: 150px;
-    margin-left: 40px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
   .para {
     font-size: 0.5rem;
@@ -104,10 +105,10 @@
     height: 40px;
     margin-left: 47px;
   }
-  .btn-work {
+  .btn-work-with-us {
     margin-left: 40px;
     margin-top: 40px;
-    width: 150px;
+    width: 150px !important;
     height: 45px;
   }
   .logos {
