@@ -5,6 +5,7 @@ import About from "./components/about/about";
 import Serve from "./components/serve/serve";
 import Navbar from "./components/navbar/navbar";
 import { useState } from "react";
+import Menu from "./components/menu/menu";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -12,7 +13,7 @@ const App = () => {
   return (
     <>
       {loading && <Loader onFinish={() => setLoading(false)} />}
-
+      <Menu />
       <Navbar />
 
       <div className="app-root body">

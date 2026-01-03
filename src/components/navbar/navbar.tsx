@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../../virtual pics/logo.png";
 import "./navbar.css";
+
 const navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
@@ -78,6 +79,7 @@ const navbar = () => {
                   Contact
                 </a>
               </li>
+              <li></li>
             </ul>
           </div>
         </div>
