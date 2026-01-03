@@ -70,6 +70,13 @@
   margin: 50px;
   margin-bottom: 150px !important;
 }
+.logoss {
+  width: 6rem !important;
+  height: auto !important;
+  margin: 0 5px !important;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 768px) {
   .hero-image {
     width: 100%; /* fill horizontal space */
