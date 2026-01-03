@@ -13,9 +13,9 @@ const App = () => {
   return (
     <>
       {loading && <Loader onFinish={() => setLoading(false)} />}
-      <Menu />
-      <Navbar />
 
+      <Navbar />
+      {!loading && <Menu />}
       <div className="app-root body">
         <Hero loading={loading} />
       </div>
