@@ -5,6 +5,7 @@ import Partner2 from "../../virtual pics/partner2.png";
 import Partner3 from "../../virtual pics/partner4.png";
 import Partner4 from "../../virtual pics/partner5.png";
 import Partner5 from "../../virtual pics/partner6.png";
+import Partner6 from "../../virtual pics/partner.png";
 
 const Hero = () => {
   return (
@@ -39,9 +40,10 @@ const Hero = () => {
         <div className="trusted-logos">
           <img className="logos" src={Partner1} alt="Brand 1" />
           <img className="logos" src={Partner2} alt="Brand 2" />
-          <img className="logos" src={Partner3} alt="Brand 3" />
+          <img className="logoss" src={Partner3} alt="Brand 3" />
           <img className="logos" src={Partner4} alt="Brand 4" />
           <img className="logos" src={Partner5} alt="Brand 5" />
+          <img className="logoss" src={Partner6} alt="Brand 5" />
         </div>
       </div>
     </>

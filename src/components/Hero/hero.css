@@ -17,16 +17,15 @@
 }
 .header {
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   font-family: "Alice", serif;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 10px;
   padding: 0;
   line-height: 1.4; /* optional spacing between lines */
-  margin-top: 100px;
+  margin-top: 130px;
   margin-left: 50px;
 }
 .para {
@@ -78,6 +77,52 @@
     min-height: 100vh; /* full screen height */
     background-size: cover;
     background-position: center;
+  }
+  .header {
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-top: 150px;
+    margin-left: 40px;
+  }
+  .para {
+    font-size: 0.5rem;
+
+    margin-left: 40px;
+    max-width: 90%; /* limit line-length */
+  }
+  .btn-about {
+    margin: 40px;
+    margin-bottom: 100px !important;
+    width: 135px;
+    height: 40px;
+    margin-left: 47px;
+  }
+  .btn-work {
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 150px;
+    height: 45px;
+  }
+  .logos {
+    width: 6rem !important;
+    height: auto !important;
+    margin: 0 5px !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoss {
+    width: 3.5rem !important;
+    height: auto !important;
+    margin: 0 5px !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .header3 {
+    color: black;
+    font-size: 1rem !important;
+    font-family: "Alice", serif;
+    font-weight: 600;
+    margin-bottom: 30px;
   }
 }
 .trusted-by-section {
