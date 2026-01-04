@@ -16,14 +16,15 @@
   text-align: center;
 }
 .serve-img {
-  width: 3rem;
-  height: 3rem;
-  margin-top: 30px;
+  width: 3.7rem;
+  height: auto;
+  margin-top: 50px;
 }
 .serve-data {
-  width: 8rem;
-  height: 5rem;
-  margin-top: 10px;
+  width: 11rem;
+  height: auto;
+  margin-top: 30px;
+  box-shadow: 0 18px 25px -20px rgba(0, 0, 0, 0.8);
 }
 
 .serve-card1 {
@@ -31,15 +32,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 14rem;
+  width: 15rem;
   border: none;
   background-color: #6fffdb32;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.377);
   transition: transform 0.3s ease;
-  margin-left: 100px;
-  height: 15rem;
-  margin-bottom: 10px;
+  margin-left: 50px;
+  height: 17rem;
 }
 .card-title {
   font-size: 1.2rem;
@@ -60,16 +60,35 @@
 }
 .serve-cards {
   display: flex;
-  gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  padding: 0;
+  width: 100vw;
+  margin-top: 50px;
+  margin-left: -35px;
+}
+.serve-spacer {
+  width: 100 vw;
+  height: auto;
+  margin-right: 100px;
 }
 @media (max-width: 768px) {
   .serve-header {
     margin-top: 50px;
+    white-space: nowrap;
+    margin-left: 110px;
+    font-size: 0.9rem;
   }
   .serve-card1 {
-    margin-left: 0px;
+    margin-left: 70px;
+    margin-bottom: 70px;
+  }
+  .serve-sub {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 70px !important;
+    padding: 0;
+    margin-left: 0;
+    white-space: nowrap;
   }
 }

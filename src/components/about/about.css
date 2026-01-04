@@ -36,12 +36,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 auto;
+  margin: 0;
 }
 
-  .about-left {
-  flex: 1 1 100%; 
-  max-width: 400px; 
+.about-left {
+  flex: 1 1 100%;
+  max-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +83,9 @@
   width: 200px;
   transition: background-color 0.3s ease #021c1c;
   margin-top: 10px;
+}
+.btn-work2:hover {
+  background-color: #042c2c;
 }
 @media (max-width: 768px) {
   .btn-work2 {

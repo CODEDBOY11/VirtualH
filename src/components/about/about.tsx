@@ -37,7 +37,7 @@ const about = () => {
           </motion.h4>
 
           <motion.h2 className="about-sub" variants={itemVariants}>
-            We help people build skills & businesses run better...
+            We help people build skills & <br /> businesses run better...
           </motion.h2>
 
           <motion.p className="first-para" variants={itemVariants}>

@@ -3,8 +3,8 @@ import VAImg from "../../virtual pics/serve1.png";
 import VAImg2 from "../../virtual pics/serve2.png";
 import VAImg3 from "../../virtual pics/serve3.png";
 import VARImg from "../../virtual pics/pic6.png";
-import VARImg2 from "../../virtual pics/pic7.png";
-import VARImg3 from "../../virtual pics/pic8.png";
+import VARImg2 from "../../virtual pics/pic5.png";
+import VARImg3 from "../../virtual pics/pic7.png";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 
