@@ -6,6 +6,7 @@ import Serve from "./components/serve/serve";
 import Navbar from "./components/navbar/navbar";
 import { useState } from "react";
 import Menu from "./components/menu/menu";
+import Vision from "./components/vision/vision";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -23,6 +24,7 @@ const App = () => {
       <div className="body">
         <About />
         <Serve />
+        <Vision />
       </div>
     </>
   );

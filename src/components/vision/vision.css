@@ -1,0 +1,176 @@
+.vision-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: teal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 60px;
+}
+.vision-spacer {
+  margin-top: 2rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vision-sub {
+  font-size: 1.95rem;
+  margin-bottom: 2rem;
+  color: #222;
+  font-family: "Alice", sans-serif;
+  font-weight: 400;
+  text-align: center !important;
+}
+.vision-desc {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center !important;
+}
+.vision-desc-bold {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center !important;
+}
+.vision-hr {
+  width: 100%;
+  border: 2.7px solid #ccc;
+  border-radius: 7px;
+  margin: 2rem 0;
+}
+.vision-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 56px;
+}
+.vision-index {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: teal;
+  width: 2.5rem;
+  height: auto;
+  text-align: center;
+}
+.vision-item-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Alice", sans-serif;
+  margin-top: 5px;
+}
+.vision-item-desc {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center !important;
+  display: block;
+  text-justify: inter-word !important;
+}
+.vision-item {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left !important;
+  margin-top: 2rem;
+}
+
+/* Container used in the JSX is .visions-container — keep alias for .vision-container too */
+.vision-container,
+.visions-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.vision-item,
+.vision-item2 {
+  flex: 1 1 0;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 40rem;
+  margin: 0;
+  padding: 0 0.75rem;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left !important;
+}
+
+.vision-separator {
+  width: 2px;
+  background: #e6e6e6;
+  margin: 0;
+  display: block;
+  align-self: stretch;
+  height: auto;
+}
+
+/* Tweak index circle to vertically center */
+.vision-index {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: teal;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive: stack items on narrow screens */
+@media (max-width: 768px) {
+  .vision-spacer {
+    width: 92vw !important;
+  }
+  .vision-sub {
+    font-size: 1.6rem !important;
+  }
+  .vision-container,
+  .visions-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .vision-item,
+  .vision-item2 {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 1.25rem;
+    padding: 0 0.5rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+  .vision-header {
+    margin-left: 20px;
+  }
+  .vision-separator {
+    display: none;
+  }
+  .vision-hr {
+    display: none !important;
+  }
+}
