@@ -45,10 +45,14 @@
   text-align: center !important;
 }
 .vision-hr {
-  width: 100%;
+  width: 40%;
   border: 2.7px solid #ccc;
   border-radius: 7px;
   margin: 2rem 0;
+  margin-left: 43rem !important;
+  justify-content: center;
+  display: block;
+  align-items: center;
 }
 .vision-header {
   display: flex;
