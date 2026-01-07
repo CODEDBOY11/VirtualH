@@ -96,7 +96,7 @@ const serve = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               />
-              <h4 className="card-title">{card.title}</h4>
+              <h4 className="card-title1">{card.title}</h4>
               <p className="card-para">{card.para}</p>
               <img className="serve-data" src={card.dataImg} alt="" />
             </motion.div>
