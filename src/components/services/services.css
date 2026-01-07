@@ -1,0 +1,115 @@
+.services-title {
+  margin-bottom: -2rem;
+  font-size: 1rem;
+  color: teal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  justify-content: flex-start;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.header7 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin-left: 180px;
+  margin-bottom: 30px;
+}
+.service-spacer {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.serveImg {
+  margin-left: 70px;
+  height: 33rem;
+}
+.services-content {
+  display: flex;
+}
+.services-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+
+  max-width: 800px;
+}
+
+/* Cards container: show two cards per row */
+.serve-cardss {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 130%;
+  margin: 0px;
+  margin-left: 100px;
+}
+
+/* Individual card styling */
+.serve-card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  border: none;
+  background-color: #6fffdb32;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.377);
+  transition: transform 0.3s ease;
+  margin-left: 0px;
+  height: 15rem;
+  margin-bottom: 50px;
+  margin-right: -50px !important;
+}
+
+.serve-card2 h3 {
+  font-size: 1.3rem;
+  color: rgb(0, 32, 32);
+  margin: 0;
+  font-weight: 600;
+  font-family: "Poppins", serif;
+  margin-top: -50px;
+}
+
+/* Horizontal rule between number and title */
+.hori {
+  width: 180px;
+  height: 4px;
+  border: 0.1px solid;
+  display: block;
+  color: teal;
+  background-color: teal;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  margin-top: 0px;
+  text-align: center;
+  font-family: "Cardo", serif;
+}
+
+.card-paraa {
+  color: black;
+  margin-top: 0rem;
+  font-size: 0.7rem;
+  margin-bottom: -50px;
+  text-align: center;
+  font-family: "Poppins", serif;
+  width: 90%;
+}
+
+/* Responsive: single column on smaller screens */
+@media (max-width: 700px) {
+  .serve-cards {
+    grid-template-columns: 1fr;
+  }
+  .header3 {
+    margin-left: 0;
+    text-align: left;
+    padding-left: 70px;
+  }
+}

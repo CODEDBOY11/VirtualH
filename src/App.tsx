@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/navbar";
 import { useState } from "react";
 import Menu from "./components/menu/menu";
 import Vision from "./components/vision/vision";
+import Services from "./components/services/services";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ const App = () => {
         <About />
         <Serve />
         <Vision />
+        <Services loading={loading} />
       </div>
     </>
   );

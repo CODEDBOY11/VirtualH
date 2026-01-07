@@ -26,7 +26,7 @@ export default function Menu() {
       href: "#services",
       icon: <FaCogs />,
       dropdown: [
-        { name: "For Students", href: "#students" },
+        { name: "For Learners", href: "#students" },
         { name: "For Clients", href: "#clients" },
       ],
     },
